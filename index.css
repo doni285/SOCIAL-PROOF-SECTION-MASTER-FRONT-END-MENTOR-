@@ -1,8 +1,8 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
+
 
 #font {
     font-family: "League Spartan", sans-serif;
@@ -10,20 +10,11 @@
     font-style: normal;
 }
 
-/* =======================
-   BASE / DESKTOP
-======================= */
-
 body {
     margin: 100px 100px;
     font-size: 15px;
-
-    background-image: 
-        url(./images/bg-pattern-top-desktop.svg),
-        url(./images/bg-pattern-bottom-desktop.svg);
-
-    background-repeat: no-repeat, no-repeat;
-    background-position: top left, bottom right;
+    background-image: url(./images/bg-pattern-top-desktop.svg);
+    background-image: url(./images/bg-pattern-bottom-desktop.svg);
 }
 
 .main {
@@ -43,24 +34,60 @@ body {
     display: flex;
 }
 
-/* ===== Stars Section ===== */
+.star1 {
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    padding-right: 50px;
+    margin-left: 190px;
+    margin-right: 90px;
+}
 
-.star1,
-.star2,
+.star1 p {
+    color: hsl(300, 43%, 22%);
+    font-weight: 600;
+    padding-top: 2px;
+    padding-left: 30px;
+}
+
+.star1 img {
+    padding: 0px 2px;
+}
+
+.star2 {
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    padding-right: 50px;
+    margin-left: 230px;
+    margin-right: 30px;
+}
+
+.star2 p {
+    color: hsl(300, 43%, 22%);
+    font-weight: 600;
+    padding-top: 2px;
+    padding-left: 30px;
+}
+
+.star2 img {
+    padding: 0px 2px;
+}
+
 .star3 {
     display: flex;
     background-color: hsl(300, 24%, 96%);
     border-radius: 5px;
     margin-bottom: 10px;
-    padding: 15px 50px 15px 15px;
+    padding: 15px;
+    padding-right: 50px;
+    margin-left: 270px;
 }
 
-.star1 { margin-left: 190px; margin-right: 90px; }
-.star2 { margin-left: 230px; margin-right: 30px; }
-.star3 { margin-left: 270px; }
-
-.star1 p,
-.star2 p,
 .star3 p {
     color: hsl(300, 43%, 22%);
     font-weight: 600;
@@ -68,32 +95,15 @@ body {
     padding-left: 30px;
 }
 
-.star1 img,
-.star2 img,
 .star3 img {
     padding: 0px 2px;
 }
-
-/* ===== Bottom Cards ===== */
 
 .bottom {
     margin-top: 30px;
     display: flex;
     gap: 40px;
 }
-
-.card1,
-.card2,
-.card3 {
-    background-color: hsl(300, 43%, 22%);
-    width: 290px;
-    border-radius: 10px;
-    line-height: 1.2;
-    padding: 30px 20px;
-}
-
-.card2 { margin-top: 30px; }
-.card3 { margin-top: 60px; }
 
 .name {
     font-weight: 600;
@@ -109,23 +119,82 @@ body {
     width: 260px;
 }
 
-/* ===== Profile Sections ===== */
+.card1 {
+    background-color: hsl(300, 43%, 22%);
+    padding: 30px 20px 0px 20px;
+    width: 290px;
+    border-radius: 10px;
+    line-height: 1.2;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
 
-.colton,
-.irene,
-.anne {
+.colton img {
+    border-radius: 50%;
+    height: 40px;
+}
+
+.colton {
     display: flex;
     align-items: center;
     gap: 20px;
+    padding: 0px;
     margin-bottom: 15px;
 }
 
-.colton img,
-.irene img,
+.card2 {
+    background-color: hsl(300, 43%, 22%);
+    padding: 30px 20px 30px 20px;
+    width: 290px;
+    border-radius: 10px;
+    line-height: 1.2;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.irene img {
+    border-radius: 50%;
+    height: 40px;
+}
+
+.irene {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0px;
+    margin-bottom: 15px;
+}
+
+.card3 {
+    background-color: hsl(300, 43%, 22%);
+    padding: 30px 20px 30px 20px;
+    width: 290px;
+    border-radius: 10px;
+    line-height: 1.2;
+    margin-top: 60px;
+}
+
 .anne img {
     border-radius: 50%;
     height: 40px;
 }
+
+.anne {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0px;
+    margin-bottom: 15px;
+}
+
+.note1 {
+    padding-bottom: 0px;
+    color: white;
+    width: 260px;
+}
+
+/* base = mobile */
 
 /* =======================
    TABLET
@@ -228,5 +297,10 @@ body {
         max-width: 320px;
         margin-top: 0;
     }
-}
 
+   .note1 {
+    padding-bottom: 20px;
+    color: white;
+    width: 260px;
+}
+}
